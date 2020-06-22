@@ -1,0 +1,49 @@
+{
+  "reaction": [
+    { "string": "The reaction is much too extreme", "value": 5 },
+    { "string": "The reaction is somewhat too extreme", "value": 4 },
+    { "string": "The reaction is appropriate", "value": 3 },
+    { "string": "The reaction is somewhat insufficient", "value": 2 },
+    { "string": "The reaction is not at all sufficient", "value": 1 }
+  ],
+
+  "trust": [
+    { "string": "Strongly distrust", "value": 1 },
+    { "string": "Somewhat distrust", "value": 2 },
+    { "string": "Neither trust nor distrust", "value": 3 },
+    { "string": "Somewhat trust", "value": 4 },
+    { "string": "Strongly trust", "value": 5 }
+  ],
+
+  "facts": [
+    { "string": "Very untruthful", "value": 1 },
+    { "string": "Somewhat untruthful", "value": 2 },
+    { "string": "Neither truthful nor untruthful", "value": 3 },
+    { "string": "Somewhat truthful", "value": 4 },
+    { "string": "Very truthful", "value": 5 }
+  ],
+
+  "effectiveness": [
+    { "string": "Not at all effective", "value": 1 },
+    { "string": "Not effective", "value": 2 },
+    { "string": "Neither effective nor ineffective", "value": 3 },
+    { "string": "Effective", "value": 4 },
+    { "string": "Very effective", "value": 5 }
+  ],
+
+  "yes_no": [
+    { "string": "Yes", "value": 1 },
+    { "string": "No", "value": 0 }
+  ],
+
+  "conversion_sequence": [
+    { "col": "perceivedreaction", "params": "reaction" },
+    { "col": "govtrust", "params": "trust" },
+    { "col": "govfact", "params": "facts" },
+    { "col": "react_pub_appr", "params": "reaction" },
+    { "col": "perceivedeffectivnes", "params": "effectiveness" },
+    { "col": "fob_social", "params": "yes_no" },
+    { "col": "fob_stores", "params": "yes_no" },
+    { "col": "fob_curfew", "params": "yes_no" }
+  ]
+}
